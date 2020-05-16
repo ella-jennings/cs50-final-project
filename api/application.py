@@ -1,11 +1,9 @@
-import time
-from flask import Flask
-from flask import render_template
+import flask
 
-app = Flask(__name__, template_folder='../html')
+app = flask.Flask(__name__, template_folder="static/templates")
 
 @app.route('/')
 def index():
-    return render_template("index.html", token="Hello react")
+    return flask.render_template("index.html", token="Hello react")
 
 app.run(debug=True)
