@@ -1,0 +1,6 @@
+.city {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+}
