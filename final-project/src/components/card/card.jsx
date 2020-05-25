@@ -4,17 +4,11 @@ import DealIcon from '../deal/deal';
 import './card.scss'
 
 const Card = (props) => {
-    console.log(props);
     let className = props.selected === true ? "selected" : "unselected";
-    const changeSelected = () => {
-        console.log('got here');
-        props.setAsSelected(props.reference);
-    }
     
     const value = props.value === Deal ? <DealIcon/> : props.value;
-    console.log(props)
     return(
-        <button name={props.value} className={`card card_${className} card_${props.colour}`} onClick={() => changeSelected()}>{value}</button>
+        <button name={props.value} className={`card card_${props.colour}_${className}`} onClick={() => props.setAsSelected(props.reference)}>{value}</button>
     )
 }
 

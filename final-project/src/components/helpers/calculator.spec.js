@@ -1,6 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import City, {CalculateScore} from './city';
+import {CalculateScore} from '../helpers/calculator';
 
 test('CalculateScore is 0 by default', () => {
   let score = CalculateScore([]);

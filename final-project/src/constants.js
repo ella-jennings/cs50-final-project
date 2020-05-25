@@ -71,3 +71,36 @@ export const InitialCards = {
         reference: 10,
     },
   }
+
+  export const InitialCities = {
+    [CityEnum.YELLOW]: {
+      cards: InitialCards,
+      colour: CityEnum.YELLOW,
+      total: 0
+    },
+    [CityEnum.BLUE]: {
+      cards: InitialCards,
+      colour: CityEnum.BLUE,
+      total: 0
+    },
+    [CityEnum.RED]: {
+      cards: InitialCards,
+      colour: CityEnum.RED,
+      total: 0
+    },
+    [CityEnum.WHITE]: {
+      cards: InitialCards,
+      colour: CityEnum.WHITE,
+      total: 0
+    },
+    [CityEnum.GREEN]: {
+      cards: InitialCards,
+      colour: CityEnum.GREEN,
+      total: 0
+    },
+    [CityEnum.PURPLE]: {
+      cards: InitialCards,
+      colour: CityEnum.PURPLE,
+      total: 0
+    }
+  }
