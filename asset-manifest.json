@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/lost-cities-calculator/static/css/main.48ffcf98.chunk.css",
-    "main.js": "/lost-cities-calculator/static/js/main.075ff505.chunk.js",
-    "main.js.map": "/lost-cities-calculator/static/js/main.075ff505.chunk.js.map",
+    "main.css": "/lost-cities-calculator/static/css/main.d82e2827.chunk.css",
+    "main.js": "/lost-cities-calculator/static/js/main.c9bcfe21.chunk.js",
+    "main.js.map": "/lost-cities-calculator/static/js/main.c9bcfe21.chunk.js.map",
     "runtime-main.js": "/lost-cities-calculator/static/js/runtime-main.eb7984d1.js",
     "runtime-main.js.map": "/lost-cities-calculator/static/js/runtime-main.eb7984d1.js.map",
     "static/js/2.84804f03.chunk.js": "/lost-cities-calculator/static/js/2.84804f03.chunk.js",
     "static/js/2.84804f03.chunk.js.map": "/lost-cities-calculator/static/js/2.84804f03.chunk.js.map",
     "index.html": "/lost-cities-calculator/index.html",
-    "precache-manifest.128e52405652eed4ff18e75d77967e27.js": "/lost-cities-calculator/precache-manifest.128e52405652eed4ff18e75d77967e27.js",
+    "precache-manifest.3f2c5fe926613d9b455efc87f8533557.js": "/lost-cities-calculator/precache-manifest.3f2c5fe926613d9b455efc87f8533557.js",
     "service-worker.js": "/lost-cities-calculator/service-worker.js",
-    "static/css/main.48ffcf98.chunk.css.map": "/lost-cities-calculator/static/css/main.48ffcf98.chunk.css.map",
+    "static/css/main.d82e2827.chunk.css.map": "/lost-cities-calculator/static/css/main.d82e2827.chunk.css.map",
     "static/js/2.84804f03.chunk.js.LICENSE.txt": "/lost-cities-calculator/static/js/2.84804f03.chunk.js.LICENSE.txt",
-    "static/media/city.css": "/lost-cities-calculator/static/media/yellow_background.15a8b7ac.jpg"
+    "static/media/city.scss": "/lost-cities-calculator/static/media/yellow_background.15a8b7ac.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.eb7984d1.js",
     "static/js/2.84804f03.chunk.js",
-    "static/css/main.48ffcf98.chunk.css",
-    "static/js/main.075ff505.chunk.js"
+    "static/css/main.d82e2827.chunk.css",
+    "static/js/main.c9bcfe21.chunk.js"
   ]
 }
