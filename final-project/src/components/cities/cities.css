@@ -1,0 +1,6 @@
+.cities {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    min-width: 100%;
+}

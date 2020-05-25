@@ -1,0 +1,27 @@
+.card {
+    height: 2rem;
+    width: 2rem;
+    background-color: lightgray;
+    align-self: center;
+}
+
+.card_selected {
+    &.card_yellow {
+        background-color: yellow;
+    }
+    &.card_red {
+        background-color: red;
+    }
+    &.card_blue {
+        background-color: blue;
+    }
+    &.card_white{
+        background-color: white;
+    }
+    &.card_purple {
+        background-color: mediumslateblue;
+    }
+    &.card_green {
+        background-color: green;
+    }
+}

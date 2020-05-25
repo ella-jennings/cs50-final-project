@@ -2,5 +2,26 @@
     display: flex;
     justify-content: left;
     align-items: flex-start;
-    flex-direction: column;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.city_yellow {
+    background-image: url('../../images/yellow_background.jpg') ;
+}
+.city_red {
+    background-image: url('../../images/red_background.jpg');
+}
+.city_white {
+    background-image: url('../../images/white_background.jpg');
+}
+.city_blue {
+    background-image: url('../../images/blue_background.jpg');
+}
+.city_green{
+    background-image: url('../../images/green_background.jpg');
+}
+.city_purple {
+    background-image: url('../../images/purple_background.jpg');
 }
