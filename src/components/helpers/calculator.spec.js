@@ -1,4 +1,3 @@
-import React from 'react';
 import {CalculateScore} from '../helpers/calculator';
 
 test('CalculateScore is 0 by default', () => {

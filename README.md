@@ -4,7 +4,9 @@
 This project is intended to be my final project for [CS50](https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/) 
 
 ## Rationale
-I spend a lot of time playing the game Lost Cities, but it can be annoying to add up all the scores. What better way to keep track of what I'm doing than by making this my final project
+I spend a lot of time playing the game Lost Cities, but it can be annoying to add up all the scores. 
+
+What better way to keep track of what I'm doing than by making this my final project.
 
 ## Goals
 

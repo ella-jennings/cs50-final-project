@@ -46,6 +46,7 @@ const Cities = () => {
       updateCardsForCity: (city ,cardValue) => updateCardsForCity(city, cardValue)
     }
     return(
+      <div>
         <div className={"cities"}>
           <City {...cities[CityEnum.YELLOW]} {...customProps}/>
           <City {...cities[CityEnum.BLUE]} {...customProps}/>
@@ -53,7 +54,8 @@ const Cities = () => {
           <City {...cities[CityEnum.GREEN]} {...customProps}/>
           <City {...cities[CityEnum.RED]} {...customProps}/>
           <City {...cities[CityEnum.PURPLE]} {...customProps}/>
-    <p>Total: {total}</p>
+        </div>
+        <p className="total">Total: {total}</p>
       </div>
     )
 }

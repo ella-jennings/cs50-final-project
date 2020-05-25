@@ -1,26 +1,50 @@
+$border: 0.2rem solid white;
+$border-radius: 1rem;
+
 .card {
-    height: 2rem;
-    width: 2rem;
+    height: 3.5rem;
+    width: 30%;
     background-color: lightgray;
     align-self: center;
+    justify-self: stretch;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    border-top: $border;
+    border-left: $border;
+    border-right: $border;
+    margin-top: -0.8rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    font-size: 1rem;
 }
 
 
-.card_yellow_selected {
-    background-color: yellow;
+.card_yellow {
+    background-color: #fff4bf; 
+    border-color: #F4BC1C;
 }
-.card_red_selected {
-    background-color: red;
+.card_red {
+    background-color: #de8373; 
+    border-color: #D83A17;
 }
-.card_blue_selected {
-    background-color: blue;
+.card_blue {
+    background-color: #99f5ff;
+    border-color: #104E8B;
 }
-.card_white_selected {
-    background-color: white;
+.card_white {
+    background-color: whitesmoke;
+    border-color: white;
 }
-.card_purple_selected {
-    background-color: mediumslateblue;
+.card_purple {
+    background-color: #b0aaf2; 
+    border-color: #5A17D8;
 }
-.card_green_selected {
-    background-color: green;
+.card_green {
+    background-color: #b1ff99; 
+    border-color: #0BA13D;
+}
+
+.card--selected {
+    background-color: #282c34;
+    color: white;
 }

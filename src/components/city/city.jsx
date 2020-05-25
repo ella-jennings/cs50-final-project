@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../card/card.jsx'
-import './city.css';
+import './city.scss';
 
 const City = (props) => {
     const className = `city_${props.colour}`;
@@ -13,19 +13,21 @@ const City = (props) => {
 
     return (
         <div className={`${className} city`}>
-            <Card {...genericProps} {...cards.Deal1}/>
-            <Card {...genericProps} {...cards.Deal2}/>
-            <Card {...genericProps} {...cards.Deal3}/>
-            <Card {...genericProps} {...cards[2]}/>
-            <Card {...genericProps} {...cards[3]}/>
-            <Card {...genericProps} {...cards[4]}/>
-            <Card {...genericProps} {...cards[5]}/>
-            <Card {...genericProps} {...cards[6]}/>
-            <Card {...genericProps} {...cards[7]}/>
-            <Card {...genericProps} {...cards[8]}/>
-            <Card {...genericProps} {...cards[9]}/>
-            <Card {...genericProps} {...cards[10]}/>
-            <p>Total: {props.total}</p>
+            <div className={"cards"}>
+                <Card {...genericProps} {...cards.Deal1}/>
+                <Card {...genericProps} {...cards.Deal2}/>
+                <Card {...genericProps} {...cards.Deal3}/>
+                <Card {...genericProps} {...cards[2]}/>
+                <Card {...genericProps} {...cards[3]}/>
+                <Card {...genericProps} {...cards[4]}/>
+                <Card {...genericProps} {...cards[5]}/>
+                <Card {...genericProps} {...cards[6]}/>
+                <Card {...genericProps} {...cards[7]}/>
+                <Card {...genericProps} {...cards[8]}/>
+                <Card {...genericProps} {...cards[9]}/>
+                <Card {...genericProps} {...cards[10]}/>
+            </div>
+            <p className={"total"}>Total: {props.total}</p>
         </div>
     )
 }
