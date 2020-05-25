@@ -5,12 +5,20 @@ I spend a lot of time playing the game Lost Cities, but it can be annoying to ad
 
 ## Goals
 
-* Create simple application with homepage
-* Create score for 1 round, with 5 colours (no bonuses)
-* Add deal card bonus functionality
-* Add option for 6th colour
-* Add option for second player, and declare winner
+### Within scope of CS50 assignment
+* Create simple application with homepage ✅
+* Create score for 1 round, with 6 colours (no bonuses) ✅
+* Add deal card bonus functionality ✅
+* Add 8 card bonus
+* Add ability to reset row
+* Add ability to reset player 
+* Optimise for mobile view
+* Add option for 5 or 6 colours
+* Add option for second player
+* Declare winner
 * Add option for 3-round games
+
+### Possible Future Functionality
 * Add login functionality
 * Logged in user can save regular players
 * Logged in user can select from players created when choosing game
