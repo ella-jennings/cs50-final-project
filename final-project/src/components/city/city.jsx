@@ -12,7 +12,6 @@ const City = (props) => {
     }
 
     return (
-        console.log('rendering', props.colour)||
         <div className={`${className} city`}>
             <Card {...genericProps} {...cards.Deal1}/>
             <Card {...genericProps} {...cards.Deal2}/>

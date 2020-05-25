@@ -6,14 +6,13 @@ import {CalculateScore} from '../helpers/calculator';
 
 
 const Cities = () => {
-    const [cities, setCity] = useState(InitialCities)
+    const [cities, setCities] = useState(InitialCities)
     const [total, setTotal] = useState(0);
    
     const updateCardsForCity = (city, cardValue) => {
-      console.log('call to', city, cities);
       let update = {...cities};
-      update[city].cards[cardValue].selected = !update[city].cards[cardValue].selected;
-      setCity(update);
+      update[city].cards[cardValue].selected = !update[city].cards[cardValue].selected
+      setCities(update);
       calculateScore(city);
       calculateTotal();
     }
@@ -31,15 +30,13 @@ const Cities = () => {
       }
 
       update[city].total = CalculateScore(array);
-      setCity(update);
+      setCities(update);
     }
 
     const calculateTotal = () => {
-      console.log('*** got here', cities);
       let total = 0;
       for (var city in cities)
       {
-        console.log('***', cities[city].total);
           total += cities[city].total;
       }
       setTotal(total);
