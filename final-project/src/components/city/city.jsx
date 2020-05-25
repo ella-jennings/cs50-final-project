@@ -1,70 +1,7 @@
 import React, {useState} from 'react';
 import Card from '../card/card.jsx'
 import './city.css';
-import {Deal} from '../../constants'
-
-const InitialCards = {
-    Deal1: {
-        selected: false,
-        value: Deal,
-        reference: "Deal1",
-    },
-    Deal2: {
-        selected: false,
-        value: Deal,
-        reference: "Deal2",
-    },
-    Deal3: {
-        selected: false,
-        value: Deal,
-        reference: "Deal3",
-    },
-    2: {
-        selected: false,
-        value: 2,
-        reference: 2,
-    },
-    3: {
-        selected: false,
-        value: 3,
-        reference: 3,
-    },
-    4: {
-        selected: false,
-        value: 4,
-        reference: 4,
-    },
-    5: {
-        selected: false,
-        value: 5,
-        reference: 5,
-    },
-    6: {
-        selected: false,
-        value: 6,
-        reference: 6,
-    },
-    7: {
-        selected: false,
-        value: 7,
-        reference: 7,
-    },
-    8: {
-        selected: false,
-        value: 8,
-        reference: 8,
-    },
-    9: {
-        selected: false,
-        value: 9,
-        reference: 9,
-    },
-    10: {
-        selected: false,
-        value: 10,
-        reference: 10,
-    },
-}
+import {Deal, InitialCards} from '../../constants'
 
 
 
@@ -75,7 +12,16 @@ const City = (props) => {
         let newCards = {...cards};
         newCards[value].selected = !newCards[value].selected;
         updateCards(newCards);
-        console.log(cards.Deal1.selected)
+
+        let array = [];
+        for (var key in cards)
+        {
+            if(cards[key].selected){
+                array.push(cards[key].value);
+            }
+        }
+        const total = CalculateScore(array);
+        calculateTotal(total);
     }
     const [total, calculateTotal] = useState(0);
     const genericProps = {

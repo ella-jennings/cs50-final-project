@@ -3,7 +3,6 @@ import {Deal} from '../../constants';
 import DealIcon from '../deal/deal';
 import './card.scss'
 
-
 const Card = (props) => {
     console.log(props);
     let className = props.selected === true ? "selected" : "unselected";
