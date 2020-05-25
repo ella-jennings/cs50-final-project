@@ -18,7 +18,6 @@ I spend a lot of time playing the game Lost Cities, but it can be annoying to ad
 * Game will display new stats at the end of each round/game (depending on stat)
 
 ## How to run
-1. From project home, in terminal enter `cd api`.
-2. Set `export FLASK_URL=application.py`.
-3. Run `flask run` from terminal in that location.
+1. From project home, in terminal enter `cd final-project`.
+2. Run `yarn start`.
 
