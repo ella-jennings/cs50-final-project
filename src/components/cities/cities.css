@@ -1,7 +1,0 @@
-.cities {
-    display: flex;
-    /* this can change to row at larger breakpoint*/
-    flex-direction: column;
-    justify-content: stretch;
-    min-width: 100%;
-}

@@ -12,7 +12,8 @@ const City = (props) => {
     }
 
     return (
-        <div className={`${className} city`}>
+        <div className={`city_${props.colour} city`}>
+            <p className={`total total_${props.colour}`}>{props.total}</p>
             <div className={"cards"}>
                 <Card {...genericProps} {...cards.Deal1}/>
                 <Card {...genericProps} {...cards.Deal2}/>
@@ -27,7 +28,6 @@ const City = (props) => {
                 <Card {...genericProps} {...cards[9]}/>
                 <Card {...genericProps} {...cards[10]}/>
             </div>
-            <p className={"total"}>Total: {props.total}</p>
         </div>
     )
 }

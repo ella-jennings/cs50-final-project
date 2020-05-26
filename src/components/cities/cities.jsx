@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import City from '../city/city.jsx'
-import './cities.css';
+import './cities.scss';
 import {InitialCities, CityEnum} from '../../constants';
 import {CalculateScore} from '../helpers/calculator';
 
@@ -55,7 +55,7 @@ const Cities = () => {
           <City {...cities[CityEnum.RED]} {...customProps}/>
           <City {...cities[CityEnum.PURPLE]} {...customProps}/>
         </div>
-        <p className="total">Total: {total}</p>
+        <p className="total total_score">Total Score: {total}</p>
       </div>
     )
 }
