@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lost-cities-calculator/precache-manifest.5c63a62334c6d9413758bf0eb39681ee.js"
+  "/lost-cities-calculator/precache-manifest.ce71c60d0cf6bf73648f5bdb21e54727.js"
 );
 
 self.addEventListener('message', (event) => {
