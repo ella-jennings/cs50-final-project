@@ -21,8 +21,8 @@ $border-radius: 1rem;
     display: flex;
 
     &:focus {
-        box-shadow: 7px -2px 10px 1px white;
         outline: none;
+        font-style: underline;
     }
 }
 
@@ -36,6 +36,9 @@ $border-radius: 1rem;
     border-color: #F4BC1C;
     &:hover {
         box-shadow: 7px -2px 10px 1px #F4BC1C;
+    }
+    &:focus {
+        box-shadow: 7px -2px 10px 1px #F4BC1C;
     } 
 }
 .card_red {
@@ -44,11 +47,17 @@ $border-radius: 1rem;
     &:hover {
         box-shadow: 7px -2px 10px 1px #D83A17;
     } 
+    &:focus {
+        box-shadow: 7px -2px 10px 1px #D83A17;
+    } 
 }
 .card_blue {
     background-color: #99f5ff;
     border-color: #104E8B;
     &:hover {
+        box-shadow: 7px -2px 10px 1px #104E8B;
+    }  
+    &:focus {
         box-shadow: 7px -2px 10px 1px #104E8B;
     } 
 }
@@ -57,6 +66,9 @@ $border-radius: 1rem;
     border-color: white;
     &:hover {
         box-shadow: 7px -2px 10px 1px grey;
+    }
+    &:focus {
+        box-shadow: 7px -2px 10px 1px grey;
     } 
 }
 .card_purple {
@@ -64,12 +76,18 @@ $border-radius: 1rem;
     border-color: #5A17D8;
     &:hover {
         box-shadow: 7px -2px 10px 1px #5A17D8;
+    }  
+    &:focus {
+        box-shadow: 7px -2px 10px 1px #5A17D8;
     } 
 }
 .card_green {
     background-color: #b1ff99; 
     border-color: #0BA13D;
     &:hover {
+        box-shadow: 7px -2px 10px 1px #0BA13D;
+    } 
+    &:focus {
         box-shadow: 7px -2px 10px 1px #0BA13D;
     } 
 }
