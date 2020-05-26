@@ -15,9 +15,10 @@ What better way to keep track of what I'm doing than by making this my final pro
 * Create score for 1 round, with 6 colours (no bonuses) ✅
 * Add deal card bonus functionality ✅
 * Add 8 card bonus ✅
+* Optimise for mobile view ✅
 * Add ability to reset row
 * Add ability to reset player 
-* Optimise for mobile view
+* Responsive content at larger breakpoints
 * Add option for 5 or 6 colours
 * Add option for second player
 * Declare winner
