@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    padding-top: 1.5rem;
+    padding-top: 3em;
 }
 
 .cards {
@@ -14,7 +14,11 @@
     align-self: center;
     flex-wrap: wrap;
     // this should change based on breakpoint 12/16/32
-    max-height: 11rem;
+    max-height: 10em;
+}
+
+.total {
+
 }
 
 .city_yellow {
