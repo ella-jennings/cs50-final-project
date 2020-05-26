@@ -8,7 +8,11 @@ const Card = (props) => {
     const value = props.value === Deal ? <DealIcon className={className}/> : props.value;
 
     return(
-        <button name={props.value} className={`card card_${props.colour} card${className}`} onClick={() => props.setAsSelected(props.reference)}>{value}</button>
+        <button name={props.value} className={`card card_${props.colour} card${className}`} onClick={() => props.setAsSelected(props.reference)}>
+            <span className={"value"}>
+                {value}
+            </span>    
+        </button>
     )
 }
 
