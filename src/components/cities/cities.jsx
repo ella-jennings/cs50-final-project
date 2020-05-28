@@ -35,7 +35,11 @@ const Cities = (props) => {
         <div className={"cities"}>
           {Object.keys(cities).map(cityColour => <City colour={cityColour} {...childProps}/>)}
         </div>
-        <p className="total total_score">Total Score: {overallTotal}</p>
+        <div className="total_score">
+          <span className="total_score total_score--value">
+            Total Score: {overallTotal}
+          </span>
+        </div>
       </div>
     )
 }
