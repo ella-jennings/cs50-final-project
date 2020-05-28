@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import City from '../city/city.jsx'
 import './cities.scss';
-import {InitialCities} from '../../constants';
+import {InitialCities, CityEnum} from '../../constants';
 
 
-const Cities = () => {
+const Cities = (props) => {
+    if(props.fiveCities) {delete InitialCities[CityEnum.PURPLE]};
     const [cities, updateCities] = useState(InitialCities);
     const [overallTotal, updateTotal] = useState(0);
 
