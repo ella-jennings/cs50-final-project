@@ -1,6 +1,7 @@
 .dealCard {
-    height: 1.2rem;
-    width: 1.5rem;
+    height: 2em;
+    width: 1rem;
+    line-height: 2rem;
     fill: black;
 }
 
