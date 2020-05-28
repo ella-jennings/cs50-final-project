@@ -2,18 +2,19 @@ $border: 0.2rem solid white;
 $border-radius: 1em;
 
 .card {
-    height: 3.4em;
+    height: 12em;
+    max-width: 9em;
+    min-width: 5em;
     border-bottom: 0;
     font-weight: bold;
     width: 30%;
     background-color: lightgray;
     align-self: center;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
+    border-radius: $border-radius;
     border-top: $border;
     border-left: $border;
     border-right: $border;
-    margin-top: -1.2em;
+    margin-top: -8em;
     margin-left: 0.1em;
     margin-right: 0.1em;
     font-size: 1rem;
