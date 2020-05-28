@@ -13,13 +13,12 @@ export const CalculateScore = (listOfValues) => {
         bonus = 20;
     }
     listOfValues.forEach(value => {
-        if(value !== Deal) {
-            score += value;
+        if(!value.toString().includes(Deal)) {
+            score += parseInt(value);
+        }
+        else {
+            multiplier++;
         }
     });
-
-    const dealCards = listOfValues.filter(value =>  value === Deal);
-    multiplier += dealCards.length;
-
     return (score * multiplier) + bonus;
 }

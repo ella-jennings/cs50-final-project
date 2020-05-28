@@ -1,33 +1,46 @@
-import React from 'react';
-import Card from '../card/card.jsx'
+import React, {useState, useEffect} from 'react';
+import Card from '../card/card.jsx';
+import {InitialCards, CardOrder} from '../../constants';
+import {CalculateScore} from '../helpers/calculator';
 import './city.scss';
 
-const City = (props) => {
-    const className = `city_${props.colour}`;
-    let cards = props.cards;
+const City = ({colour, updateCityTotal}) => {
+    const [newTotal, setTotal] = useState(0);
+    const [cards, setCards] = useState(InitialCards);
+    
+    useEffect(() => {
+        updateTotal();
+    // adding colour/function like it suggests actually cause an infinite loop
+    // eslint-disable-next-line react-hooks/exhaustive-deps 
+    }, [cards])
+
+    const updateTotal = () => {
+        const selectedCards = [];
+        CardOrder.map(card => cards[card] && selectedCards.push(card))
+        const newTotal = CalculateScore(selectedCards);
+        setTotal(newTotal);
+        updateCityTotal(colour, newTotal);
+    }
+    
+    const updateCards = (value) => {
+        const updatedCards = {...cards};
+        updatedCards[value] = !updatedCards[value];
+        setCards(updatedCards);
+    }
 
     const genericProps = {
-        setAsSelected: (cardValue) => props.updateCardsForCity(props.colour, cardValue),
-        colour: props.colour,
+        setAsSelected: (cardValue) => updateCards(cardValue),
+        colour: colour,
     }
 
     return (
-        <div className={`city_${props.colour} city`}>
+        <div className={`city_${colour} city`}>
             <div className={"cards"}>
-                <Card {...genericProps} {...cards.Deal1}/>
-                <Card {...genericProps} {...cards.Deal2}/>
-                <Card {...genericProps} {...cards.Deal3}/>
-                <Card {...genericProps} {...cards[2]}/>
-                <Card {...genericProps} {...cards[3]}/>
-                <Card {...genericProps} {...cards[4]}/>
-                <Card {...genericProps} {...cards[5]}/>
-                <Card {...genericProps} {...cards[6]}/>
-                <Card {...genericProps} {...cards[7]}/>
-                <Card {...genericProps} {...cards[8]}/>
-                <Card {...genericProps} {...cards[9]}/>
-                <Card {...genericProps} {...cards[10]}/>
+            {
+                CardOrder.map(card => <Card {...genericProps} value={card} selected={cards[card]}/>)
+            }
             </div>
-            <p className={`total total_${props.colour}`}>{props.total}</p>
+            <p className={`total total_${colour}`}>{newTotal}</p>
         </div>
     )
 }

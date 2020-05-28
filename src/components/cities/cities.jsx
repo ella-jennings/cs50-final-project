@@ -1,61 +1,40 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import City from '../city/city.jsx'
 import './cities.scss';
-import {InitialCities, CityEnum} from '../../constants';
-import {CalculateScore} from '../helpers/calculator';
+import {InitialCities} from '../../constants';
 
 
 const Cities = () => {
-    const [cities, setCities] = useState(InitialCities)
-    const [total, setTotal] = useState(0);
-   
-    const updateCardsForCity = (city, cardValue) => {
-      let update = {...cities};
-      update[city].cards[cardValue].selected = !update[city].cards[cardValue].selected
-      setCities(update);
-      calculateScore(city);
+    const [cities, updateCities] = useState(InitialCities);
+    const [overallTotal, updateTotal] = useState(0);
+
+    useEffect(() => {
       calculateTotal();
-    }
-    
-    const calculateScore = (city) => {
-      let update = {...cities};
-
-      let array = [];
-      const cardsForCity = update[city].cards;
-      for (var card in cardsForCity)
-      {
-          if(cardsForCity[card].selected){
-              array.push(cardsForCity[card].value);
-          }
-      }
-
-      update[city].total = CalculateScore(array);
-      setCities(update);
-    }
+    });
 
     const calculateTotal = () => {
-      let total = 0;
-      for (var city in cities)
-      {
-          total += cities[city].total;
-      }
-      setTotal(total);
+      let newTotal = 0;
+      Object.keys(cities).map(city => newTotal = newTotal + cities[city]);
+      updateTotal(newTotal);
+    }
+    
+    const updateCityTotal = (city, newTotal) => {
+        const updatedCities = {...cities};
+        updatedCities[city] = newTotal;
+        updateCities(updatedCities);
+    }
+   
+    const childProps = {
+      updateCityTotal: (city, newTotal) => updateCityTotal(city, newTotal),
+      updateTotal: (total) => updateTotal(total)
     }
 
-    const customProps = {
-      updateCardsForCity: (city ,cardValue) => updateCardsForCity(city, cardValue)
-    }
     return(
       <div>
         <div className={"cities"}>
-          <City {...cities[CityEnum.YELLOW]} {...customProps}/>
-          <City {...cities[CityEnum.BLUE]} {...customProps}/>
-          <City {...cities[CityEnum.WHITE]} {...customProps}/>
-          <City {...cities[CityEnum.GREEN]} {...customProps}/>
-          <City {...cities[CityEnum.RED]} {...customProps}/>
-          <City {...cities[CityEnum.PURPLE]} {...customProps}/>
+          {Object.keys(cities).map(cityColour => <City colour={cityColour} {...childProps}/>)}
         </div>
-        <p className="total total_score">Total Score: {total}</p>
+        <p className="total total_score">Total Score: {overallTotal}</p>
       </div>
     )
 }
