@@ -10,10 +10,12 @@ export default {
 };
 
 export const card = () => (
-  <Card 
-    colour={select("Colour", CityEnum, CityEnum.YELLOW)} 
-    value={select("Value", CardOrder, "2")} 
-    selected={boolean("Selected", false)}
-  />
+  <div style={{transform: "translateY(10em)", width: "100%"}}>
+    <Card 
+      colour={select("Colour", CityEnum, CityEnum.YELLOW)} 
+      value={select("Value", CardOrder, "2")} 
+      selected={boolean("Selected", false)}
+    />
+  </div>
 );
 
