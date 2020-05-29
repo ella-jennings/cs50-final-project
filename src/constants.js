@@ -28,8 +28,8 @@ export const CardOrder = ["Deal1", "Deal2","Deal3", 2, 3, 4, 5, 6, 7, 8, 9, 10];
   
 export const InitialCities = {
   [CityEnum.YELLOW]: 0,
-  [CityEnum.BLUE]: 0,
   [CityEnum.RED]: 0,
+  [CityEnum.BLUE]: 0,
   [CityEnum.WHITE]: 0,
   [CityEnum.GREEN]: 0,
   [CityEnum.PURPLE]: 0
