@@ -3,6 +3,7 @@ import Card from '../card/card.jsx';
 import {InitialCards, CardOrder} from '../../constants';
 import {CalculateScore} from '../helpers/calculator';
 import './city.scss';
+import ResetButton from '../resetButton/resetButton.jsx';
 
 const City = ({colour, updateCityTotal}) => {
     const [newTotal, setTotal] = useState(0);
@@ -28,6 +29,11 @@ const City = ({colour, updateCityTotal}) => {
         setCards(updatedCards);
     }
 
+    const resetScore = () => {
+        setCards(InitialCards);
+        setTotal(0);
+      }
+
     const genericProps = {
         setAsSelected: (cardValue) => updateCards(cardValue),
         colour: colour,
@@ -40,7 +46,10 @@ const City = ({colour, updateCityTotal}) => {
                 CardOrder.map(card => <Card {...genericProps} value={card} selected={cards[card]}/>)
             }
             </div>
-            <p className={`total total_${colour}`}>{newTotal}</p>
+            <p className={`total total_${colour}`}>
+                {newTotal}
+                <ResetButton resetFunction={resetScore}/>
+            </p>
         </div>
     )
 }
