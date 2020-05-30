@@ -4,7 +4,7 @@ import './cities.scss';
 import {InitialCities, CityEnum} from '../../constants';
 
 
-const Cities = (props) => {
+const Cities = (props: {fiveCities: boolean}) => {
     if(props.fiveCities) {delete InitialCities[CityEnum.PURPLE]};
     const [cities, updateCities] = useState(InitialCities);
     const [overallTotal, updateTotal] = useState(0);
@@ -19,15 +19,15 @@ const Cities = (props) => {
       updateTotal(newTotal);
     }
     
-    const updateCityTotal = (city, newTotal) => {
+    const updateCityTotal = (city: string, newTotal: number) => {
         const updatedCities = {...cities};
         updatedCities[city] = newTotal;
         updateCities(updatedCities);
     }
    
     const childProps = {
-      updateCityTotal: (city, newTotal) => updateCityTotal(city, newTotal),
-      updateTotal: (total) => updateTotal(total)
+      updateCityTotal: (city: string, newTotal: number) => updateCityTotal(city, newTotal),
+      updateTotal: (total: number) => updateTotal(total)
     }
 
     return(
