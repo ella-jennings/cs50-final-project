@@ -30,7 +30,7 @@ export const InitialCities = {
   [CityEnum.YELLOW]: 0,
   [CityEnum.RED]: 0,
   [CityEnum.BLUE]: 0,
-  [CityEnum.WHITE]: 0,
   [CityEnum.GREEN]: 0,
+  [CityEnum.WHITE]: 0,
   [CityEnum.PURPLE]: 0
 }
