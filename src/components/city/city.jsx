@@ -3,7 +3,7 @@ import Card from '../card/card.jsx';
 import {InitialCards, CardOrder} from '../../constants';
 import {CalculateScore} from '../helpers/calculator.ts';
 import './city.scss';
-import ResetButton from '../resetButton/resetButton.jsx';
+import ResetButton from '../resetButton/resetButton';
 
 const City = ({colour, updateCityTotal}) => {
     const [newTotal, setTotal] = useState(0);

@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import City from '../city/city.jsx'
 import './cities.scss';
-import {InitialCities, CityEnum} from '../../constants';
+import {InitialCities, CityEnum, createUUID} from '../../constants';
+import ResetButton from '../resetButton/resetButton';
 
 
 const Cities = (props: {fiveCities: boolean}) => {
-    if(props.fiveCities) {delete InitialCities[CityEnum.PURPLE]};
+  
+  if(props.fiveCities) {delete InitialCities[CityEnum.PURPLE]};
     const [cities, updateCities] = useState(InitialCities);
     const [overallTotal, updateTotal] = useState(0);
 
@@ -24,21 +26,36 @@ const Cities = (props: {fiveCities: boolean}) => {
         updatedCities[city] = newTotal;
         updateCities(updatedCities);
     }
-   
+
     const childProps = {
       updateCityTotal: (city: string, newTotal: number) => updateCityTotal(city, newTotal),
       updateTotal: (total: number) => updateTotal(total)
     }
+    
+    const [cityItems, resetCities] = useState(Object.keys(cities).map(
+      cityColour =>
+       <City key={cityColour} colour={cityColour} {...childProps}/>
+       ))
+
+    const resetTotal = () => {
+        updateTotal(0);
+        resetCities((Object.keys(cities).map(cityColour =>
+          <City key={createUUID()} colour={cityColour} {...childProps}/>
+          )))
+    }
+
+    
 
     return(
       <div>
         <div className={"cities"}>
-          {Object.keys(cities).map(cityColour => <City colour={cityColour} {...childProps}/>)}
+          {cityItems}
         </div>
         <div className="total_score">
-          <span className="total_score total_score--value">
+          <div className=" total_score total_score--value">
             Total Score: {overallTotal}
-          </span>
+            <ResetButton resetFunction={resetTotal} isWhite={true}/>
+          </div>
         </div>
       </div>
     )
