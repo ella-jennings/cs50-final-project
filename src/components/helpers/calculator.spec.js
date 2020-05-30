@@ -1,4 +1,4 @@
-import {CalculateScore} from '../helpers/calculator';
+import {CalculateScore} from '../helpers/calculator.ts';
 
 test('CalculateScore is 0 by default', () => {
   let score = CalculateScore([]);

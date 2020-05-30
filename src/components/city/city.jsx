@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Card from '../card/card.jsx';
 import {InitialCards, CardOrder} from '../../constants';
-import {CalculateScore} from '../helpers/calculator';
+import {CalculateScore} from '../helpers/calculator.ts';
 import './city.scss';
 import ResetButton from '../resetButton/resetButton.jsx';
 

@@ -1,6 +1,6 @@
 import {Deal} from '../../constants';
 
-export const CalculateScore = (listOfValues) => {
+export const CalculateScore = (listOfValues: Array<string>):number => {
     let score = 0;
     let multiplier = 1;
     let bonus = 0;

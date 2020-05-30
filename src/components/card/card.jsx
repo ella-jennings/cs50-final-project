@@ -7,11 +7,11 @@ const Card = (props) => {
     const cardValue = props.value.toString().includes("Deal") ? <DealIcon className={className}/> : props.value;
 
     return(
-        <button name={props.value} className={`card card_${props.colour} card${className}`} onClick={() => props.setAsSelected(props.value)}>
-            <div className={"value value_small"}>
+        <button name={props.value} className={`card card--${props.colour} card${className}`} onClick={() => props.setAsSelected(props.value)}>
+            <div className={"card_value card_value--small"}>
                 {cardValue}
             </div>
-            <div className={"value value_large"}>
+            <div className={"card_value card_value--large"}>
                 {cardValue}
             </div>    
         </button>
