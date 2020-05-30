@@ -38,7 +38,6 @@ const Cities = (props) => {
         <div className="total_score">
           <span className="total_score total_score--value">
             Total Score: {overallTotal}
-            <ResetButton resetFunction={resetAll}/>
           </span>
         </div>
       </div>

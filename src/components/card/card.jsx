@@ -8,12 +8,12 @@ const Card = (props) => {
 
     return(
         <button name={props.value} className={`card card_${props.colour} card${className}`} onClick={() => props.setAsSelected(props.value)}>
-            <span className={"value value_small"}>
+            <div className={"value value_small"}>
                 {cardValue}
-            </span>
-            <span className={"value value_large"}>
+            </div>
+            <div className={"value value_large"}>
                 {cardValue}
-            </span>    
+            </div>    
         </button>
     )
 }
