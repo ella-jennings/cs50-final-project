@@ -3,7 +3,6 @@ $border: 0.3rem solid white;
 $border-radius: 1em;
 
 .card_value {
-    // border: 1px solid red;
     width: 100%;
 }
 .card_value--small {
@@ -36,11 +35,10 @@ $border-radius: 1em;
     max-width: 9em;
     border-bottom: 0;
     font-weight: bold;
-    width: 30%;
+    width: 100%;
     align-self: center;
     border-radius: $border-radius;
     border: $border;
-    margin-top: -9em;
     margin-left: 0.1em;
     margin-right: 0.1em;
     padding: 0.5em;
@@ -51,12 +49,12 @@ $border-radius: 1em;
 
     &:focus {
         outline: none;
-        margin-top: -10em;
+        margin-top: -1em;
         margin-bottom: 1em;
     }
     
     &:hover {
-        margin-top: -10em;
+        margin-top: -1em;
         margin-bottom: 1em;
     }
 

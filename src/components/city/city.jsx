@@ -47,7 +47,7 @@ const City = ({colour, updateCityTotal}) => {
             }
             </div>
             <p className={`total total_${colour}`}>
-                {newTotal}
+                <div className={"total_value"}>{newTotal}</div>
                 <ResetButton resetFunction={resetScore}/>
             </p>
         </div>

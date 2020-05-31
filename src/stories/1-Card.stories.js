@@ -10,7 +10,11 @@ export default {
 };
 
 export const card = () => (
-  <div style={{transform: "translateY(10em)", width: "100%"}}>
+  <div style={{ 
+    transform: "translateY(10em)",
+    width: "100%",
+    display: "flex",
+    justifyContent: "space-around"}}>
     <Card 
       colour={select("Colour", CityEnum, CityEnum.YELLOW)} 
       value={select("Value", CardOrder, "2")} 
