@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lost-cities-calculator/static/css/main.6b908af4.chunk.css",
+    "main.css": "/lost-cities-calculator/static/css/main.bf702e68.chunk.css",
     "main.js": "/lost-cities-calculator/static/js/main.01543766.chunk.js",
     "main.js.map": "/lost-cities-calculator/static/js/main.01543766.chunk.js.map",
     "runtime-main.js": "/lost-cities-calculator/static/js/runtime-main.eb7984d1.js",
@@ -8,9 +8,9 @@
     "static/js/2.259a7b61.chunk.js": "/lost-cities-calculator/static/js/2.259a7b61.chunk.js",
     "static/js/2.259a7b61.chunk.js.map": "/lost-cities-calculator/static/js/2.259a7b61.chunk.js.map",
     "index.html": "/lost-cities-calculator/index.html",
-    "precache-manifest.1537df97cb4daf1376b1492dd3241165.js": "/lost-cities-calculator/precache-manifest.1537df97cb4daf1376b1492dd3241165.js",
+    "precache-manifest.bffedb36cda18cb22644a6a9ef7f8353.js": "/lost-cities-calculator/precache-manifest.bffedb36cda18cb22644a6a9ef7f8353.js",
     "service-worker.js": "/lost-cities-calculator/service-worker.js",
-    "static/css/main.6b908af4.chunk.css.map": "/lost-cities-calculator/static/css/main.6b908af4.chunk.css.map",
+    "static/css/main.bf702e68.chunk.css.map": "/lost-cities-calculator/static/css/main.bf702e68.chunk.css.map",
     "static/js/2.259a7b61.chunk.js.LICENSE.txt": "/lost-cities-calculator/static/js/2.259a7b61.chunk.js.LICENSE.txt",
     "static/media/city.scss": "/lost-cities-calculator/static/media/yellow_background.f492f589.jpg",
     "static/media/card.scss": "/lost-cities-calculator/static/media/yellow_card.47dd4076.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.eb7984d1.js",
     "static/js/2.259a7b61.chunk.js",
-    "static/css/main.6b908af4.chunk.css",
+    "static/css/main.bf702e68.chunk.css",
     "static/js/main.01543766.chunk.js"
   ]
 }
