@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <h1>Lost Cities Calculator</h1>
       </header>
-      <Cities/>
+      <Cities fiveCities={false}/>
       <p>svg obtained from <a href="https://fontawesome.com/license">FontAwesome</a></p>
     </div>
   );

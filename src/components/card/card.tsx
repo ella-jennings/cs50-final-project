@@ -2,7 +2,7 @@ import React from 'react';
 import DealIcon from '../deal/deal';
 import './card.scss'
 
-const Card = (props) => {
+const Card = (props: baseProps) => {
     let className = props.selected === true ? "--selected" : "";
     const cardValue = props.value.toString().includes("Deal") ? <DealIcon className={className}/> : props.value;
 
@@ -18,4 +18,10 @@ const Card = (props) => {
     )
 }
 
+type baseProps = {
+    colour: string,
+    selected: boolean,
+    setAsSelected: (value: string) => {},
+    value: string
+}
 export default Card;

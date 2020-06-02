@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import Card from '../card/card.jsx';
+import Card from '../card/card';
 import {InitialCards, CardOrder} from '../../constants';
 import {CalculateScore} from '../helpers/calculator.ts';
 import './city.scss';

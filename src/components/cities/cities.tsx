@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import City from '../city/city.jsx'
+import City from '../city/city'
 import './cities.scss';
 import {InitialCities, CityEnum, createUUID} from '../../constants';
 import ResetButton from '../resetButton/resetButton';
