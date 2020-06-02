@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Cities from './components/cities/cities.tsx';
+import Cities from './components/cities/cities';
 
 function App() {
   return (

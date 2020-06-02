@@ -53,8 +53,8 @@ const Cities = (props: {fiveCities: boolean}) => {
         </div>
         <div className="total_score">
           <div className=" total_score total_score--value">
-            Total Score: {overallTotal}
-            <ResetButton resetFunction={resetTotal} isWhite={true}/>
+            {/* Total Score: {overallTotal}
+            <ResetButton resetFunction={resetTotal} isWhite={true}/> */}
           </div>
         </div>
       </div>
