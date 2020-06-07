@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/lost-cities-calculator/static/css/main.09b3568c.chunk.css",
-    "main.js": "/lost-cities-calculator/static/js/main.36e9d7a6.chunk.js",
-    "main.js.map": "/lost-cities-calculator/static/js/main.36e9d7a6.chunk.js.map",
+    "main.css": "/lost-cities-calculator/static/css/main.bd82c4f9.chunk.css",
+    "main.js": "/lost-cities-calculator/static/js/main.fb00352c.chunk.js",
+    "main.js.map": "/lost-cities-calculator/static/js/main.fb00352c.chunk.js.map",
     "runtime-main.js": "/lost-cities-calculator/static/js/runtime-main.eb7984d1.js",
     "runtime-main.js.map": "/lost-cities-calculator/static/js/runtime-main.eb7984d1.js.map",
     "static/js/2.259a7b61.chunk.js": "/lost-cities-calculator/static/js/2.259a7b61.chunk.js",
     "static/js/2.259a7b61.chunk.js.map": "/lost-cities-calculator/static/js/2.259a7b61.chunk.js.map",
     "index.html": "/lost-cities-calculator/index.html",
-    "precache-manifest.880aeef8ba41566bc44e30815c3a9905.js": "/lost-cities-calculator/precache-manifest.880aeef8ba41566bc44e30815c3a9905.js",
+    "precache-manifest.f4075127cc0f6a08007ef30972ecae62.js": "/lost-cities-calculator/precache-manifest.f4075127cc0f6a08007ef30972ecae62.js",
     "service-worker.js": "/lost-cities-calculator/service-worker.js",
-    "static/css/main.09b3568c.chunk.css.map": "/lost-cities-calculator/static/css/main.09b3568c.chunk.css.map",
+    "static/css/main.bd82c4f9.chunk.css.map": "/lost-cities-calculator/static/css/main.bd82c4f9.chunk.css.map",
     "static/js/2.259a7b61.chunk.js.LICENSE.txt": "/lost-cities-calculator/static/js/2.259a7b61.chunk.js.LICENSE.txt",
     "static/media/city.scss": "/lost-cities-calculator/static/media/yellow_background.f492f589.jpg",
     "static/media/card.scss": "/lost-cities-calculator/static/media/yellow_card.47dd4076.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.eb7984d1.js",
     "static/js/2.259a7b61.chunk.js",
-    "static/css/main.09b3568c.chunk.css",
-    "static/js/main.36e9d7a6.chunk.js"
+    "static/css/main.bd82c4f9.chunk.css",
+    "static/js/main.fb00352c.chunk.js"
   ]
 }
