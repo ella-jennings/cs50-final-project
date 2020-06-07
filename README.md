@@ -21,7 +21,7 @@ What better way to keep track of what I'm doing than by making this my final pro
 * Responsive content at larger breakpoints ✅
 * Add option for 5 or 6 colours ✅
 
-### 
+### Desired functionality
 * Add option for second player
 * Declare winner
 * Add option for 3-round games
