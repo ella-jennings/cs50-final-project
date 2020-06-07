@@ -1,0 +1,17 @@
+@import '../constants/colours.scss';
+.settings {
+    height: 3em;
+    width: 3em;
+    border: none;
+    border-radius: 100%;
+    background-color: $black-custom;
+
+    &:hover{
+        background-color: rgba(40, 44, 52, 0.35); 
+    }
+    &:focus{
+        background-color: rgba(40, 44, 52, 0.35);
+        outline: none;
+        box-shadow: 0 0 3px 3px $black-custom;
+    }
+}
