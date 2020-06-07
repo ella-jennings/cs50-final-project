@@ -13,13 +13,13 @@ const City = ({colour, cards, total, resetTotal, selectCard}) => {
         <div className={`city_${colour} city`}>
             <div className={"cards"}>
             {
-                CardOrder.map(card => <Card {...childProps} value={card} selected={cards[card]}/>)
+                CardOrder.map(card => <Card key={`${colour}_${card}`}{...childProps} value={card} selected={cards[card]}/>)
             }
             </div>
-            <p className={`total total_${colour}`}>
+            <div className={`total total_${colour}`}>
                 <div className={"total_value"}>{total}</div>
                 <ResetButton resetFunction={() => resetTotal(colour)}/>
-            </p>
+            </div>
         </div>
     )
 }
