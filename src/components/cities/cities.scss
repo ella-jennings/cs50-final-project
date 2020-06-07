@@ -33,6 +33,7 @@
         }  
         
         &:focus {
+            outline: none;
             background-color: rgba(256, 256, 256, 0.2);
             box-shadow: 0 0 3px 3px white;
         }
