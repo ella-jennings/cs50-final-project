@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {CalculateScore} from '../helpers/calculator.ts';
 import City from '../city/city'
 import './cities.scss';
-import {GetInitialCities, CityEnum, createUUID} from '../../constants';
+import {GetInitialCities, CityEnum} from '../../constants';
 import ResetButton from '../resetButton/resetButton';
 
 

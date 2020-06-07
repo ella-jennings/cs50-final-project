@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../card/card';
-import {CardOrder, createUUID} from '../../constants';
+import {CardOrder} from '../../constants';
 import './city.scss';
 import ResetButton from '../resetButton/resetButton';
 
