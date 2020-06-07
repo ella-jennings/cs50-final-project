@@ -1,7 +1,7 @@
 import React from 'react';
 import City from '../components/city/city';
-import { CityEnum } from '../constants';
-import { withKnobs, select } from "@storybook/addon-knobs";
+import { CityEnum, GetInitialCards } from '../constants';
+import { withKnobs, select, text } from "@storybook/addon-knobs";
 
 export default {
   title: 'City',
@@ -12,6 +12,9 @@ export default {
 export const city = () => (
   <City 
     colour={select("Colour", CityEnum, CityEnum.YELLOW)} 
-    updateCityTotal={() => {return}}
+    cards={GetInitialCards()}
+    resetTotal={() => {return}}
+    selectCard={() => {return}}
+    total={text("total", 0)}
   />
 );
