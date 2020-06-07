@@ -10,19 +10,27 @@ What better way to keep track of what I'm doing than by making this my final pro
 
 ## Goals
 
-### Within scope of CS50 assignment
+### MVP of CS50 assignment
 * Create simple application with homepage ✅
 * Create score for 1 round, with 6 colours (no bonuses) ✅
 * Add deal card bonus functionality ✅
 * Add 8 card bonus ✅
 * Optimise for mobile view ✅
 * Add ability to reset row for player ✅
-* Add ability to reset entire round for player 
-* Responsive content at larger breakpoints
-* Add option for 5 or 6 colours
+* Add ability to reset entire round for player ✅
+* Responsive content at larger breakpoints ✅
+* Add option for 5 or 6 colours ✅
+
+### 
 * Add option for second player
 * Declare winner
 * Add option for 3-round games
+
+### Tidy up
+* Button svgs are centered
+* Obvious way to close settings
+* Load times - images are large
+* A11Y check - selecting card removes focus and you have to start at top
 
 ### Possible Future Functionality
 * Add login functionality
