@@ -27,10 +27,10 @@ What better way to keep track of what I'm doing than by making this my final pro
 * Add option for 3-round games
 
 ### Tidy up
-* Button svgs are centered
+* Button svgs are not centered
 * Obvious way to close settings
 * Load times - images are large
-* A11Y check - selecting card removes focus and you have to start at top
+* A11Y check
 
 ### Possible Future Functionality
 * Add login functionality

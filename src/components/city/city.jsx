@@ -6,7 +6,6 @@ import ResetButton from '../resetButton/resetButton';
 
 const City = ({colour, cards, total, resetTotal, selectCard}) => {
     const childProps = {
-        key: createUUID(),
         setAsSelected: (cardValue) => selectCard(cardValue, colour),
         colour,
     }

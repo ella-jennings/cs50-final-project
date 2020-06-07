@@ -56,7 +56,6 @@ const Cities = ({fiveCities}) => {
           {Object.keys(cities).map(
             cityColour =>
             <City 
-            key={createUUID()} 
             colour={cityColour} 
             cards={cities[cityColour].cards} 
             total={cities[cityColour].total}
