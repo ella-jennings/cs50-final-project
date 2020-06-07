@@ -1,54 +1,25 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import Card from '../card/card';
-import {InitialCards, CardOrder} from '../../constants';
-import {CalculateScore} from '../helpers/calculator.ts';
+import {CardOrder, createUUID} from '../../constants';
 import './city.scss';
 import ResetButton from '../resetButton/resetButton';
 
-const City = ({colour, updateCityTotal}) => {
-    const [newTotal, setTotal] = useState(0);
-    const [cards, setCards] = useState(InitialCards);
-    
-    useEffect(() => {
-        updateTotal();
-    // adding colour/function like it suggests actually cause an infinite loop
-    // eslint-disable-next-line react-hooks/exhaustive-deps 
-    }, [cards])
-
-    const updateTotal = () => {
-        const selectedCards = [];
-        CardOrder.map(card => cards[card] && selectedCards.push(card))
-        const newTotal = CalculateScore(selectedCards);
-        setTotal(newTotal);
-        updateCityTotal(colour, newTotal);
+const City = ({colour, cards, total, resetTotal, selectCard}) => {
+    const childProps = {
+        key: createUUID(),
+        setAsSelected: (cardValue) => selectCard(cardValue, colour),
+        colour,
     }
-    
-    const updateCards = (value) => {
-        const updatedCards = {...cards};
-        updatedCards[value] = !updatedCards[value];
-        setCards(updatedCards);
-    }
-
-    const resetScore = () => {
-        setCards(InitialCards);
-        setTotal(0);
-      }
-
-    const genericProps = {
-        setAsSelected: (cardValue) => updateCards(cardValue),
-        colour: colour,
-    }
-
     return (
         <div className={`city_${colour} city`}>
             <div className={"cards"}>
             {
-                CardOrder.map(card => <Card {...genericProps} value={card} selected={cards[card]}/>)
+                CardOrder.map(card => <Card {...childProps} value={card} selected={cards[card]}/>)
             }
             </div>
             <p className={`total total_${colour}`}>
-                <div className={"total_value"}>{newTotal}</div>
-                <ResetButton resetFunction={resetScore}/>
+                <div className={"total_value"}>{total}</div>
+                <ResetButton resetFunction={() => resetTotal(colour)}/>
             </p>
         </div>
     )
