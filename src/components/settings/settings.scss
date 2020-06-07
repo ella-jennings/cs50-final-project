@@ -1,0 +1,9 @@
+@import '../constants/colours.scss';
+
+.settingsPanel {
+    background-color: $black-custom;
+    color: white;
+    margin-top: -0.1em;
+    padding-top: 1em;
+    height: 10em;
+}
